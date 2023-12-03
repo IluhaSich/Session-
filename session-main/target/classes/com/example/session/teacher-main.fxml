@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.session.TeacherMain">
+   <children>
+      <TableView fx:id="tview_exams" layoutX="205.0" layoutY="14.0" onMouseClicked="#getSelected" prefHeight="378.0" prefWidth="381.0">
+        <columns>
+          <TableColumn fx:id="c_examId" prefWidth="75.0" text="exam_id" />
+          <TableColumn fx:id="c_subject" prefWidth="75.0" text="subject" />
+            <TableColumn fx:id="c_student" prefWidth="75.0" text="student" />
+            <TableColumn fx:id="c_grade" prefWidth="75.0" text="grade" />
+            <TableColumn fx:id="c_attempt" text="attempt" />
+        </columns>
+      </TableView>
+      <TextField fx:id="t_grade" layoutX="22.0" layoutY="87.0" promptText="Grade" />
+      <Button fx:id="btn_grade" layoutX="39.0" layoutY="124.0" mnemonicParsing="false" text="Поставить оценку" />
+      <Button fx:id="btn_fullList" layoutX="22.0" layoutY="342.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="173.0" text="Посмотреть весь список" />
+   </children>
+</AnchorPane>
